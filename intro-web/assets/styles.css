@@ -1,0 +1,44 @@
+/* Así se hacen comentarios en css */
+*{ /* Selector universal: Selecciona todos los elementos */
+    background-color:cornflowerblue;
+}
+
+.sedgwick-ave-display-regular {
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+h1,
+h3{ /* Selector de tipo: Selecciona los elementos con ese nombre */
+    color:green;
+    text-align:center;
+    font-family:"Sedgwick Ave Display", cursive; /* Fuente personalizada */
+}
+
+h2{ /* Selector de tipo o etiqueta */
+    color:red;
+}
+
+/* Selectores de clase. Las clases sí se comparten */
+.subcategoria{
+    background-color:darkseagreen;
+}
+
+/* Selectores de id. Los ids no se comparten y son únicos. */
+#categoria-principal{
+    background-color: purple;
+    width:30%; /* El ancho de un elemento */
+    border-radius:10px; /* Redondear las esquinas */
+}
+
+p:hover{ /* Pseudo-clase. */
+    background-color: pink;
+}
+
+p::first-letter{/* Pseudo-elemento */
+   color: fuchsia;
+}
+
+
+

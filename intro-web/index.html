@@ -1,0 +1,88 @@
+<!DOCTYPE html> <!--Tipo de documento -->
+<html lang="en"> <!--Documento html- Contenedor de nuestra página 
+Atributo lang, de language y su valor es "en", viene de english. -->
+<head> <!--Contiene metadatos, que no son visibles en la página web-->
+    <meta charset="UTF-8"> <!-- Especificar la codificación de los caracteres del documento, para interpretar símbolos y caracteres de todos los idiomas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Se utiliza para el responsive, pero no significa que al colocarla, nuestra web app ya será responsive, pues se necesitan más cosas para ello. -->
+    <title> Mi fanpage </title> <!-- Establece el título de l a página y aprece en la pestaña del navegador -->
+    <link rel="icon" href="./assets/img/heart.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles.css"> <!-- Se conecta CSS externo -->
+    <!-- <style> Estilo interno o embebido
+        h3{
+            color:hotpink;
+        }
+    </style>
+ -->
+</head> 
+<body> <!-- Tiene el contenido visible de la página web -->
+    <!-- Headers- Encabezados h1-h6 -->
+    <div class="seccion-1">
+    <h1> Fan page de Green Day </h1>
+    <img src="./assets/img/tanix_buchona.jpg" alt="Foto de una mujer con camisa negra, sombrero café, collares caros y una camioneta de fondo">
+    <!-- img es una etiqueta de autocierre y tiene dos atributos de cajón
+    src- source: recurso, imagen
+    alt- alternative: Importante para la accesibilidad -->
+    <p style="color:goldenrod; font-size:50px;"> Esta es una página dedicada a mi banda favorita</p> <!-- Estilos en línea -->
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Suscipit asperiores magni dicta id libero enim dolores iste sit cupiditate est repellat totam voluptatem ipsam modi perspiciatis, unde sed praesentium. Eius.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis enim harum iure nesciunt laboriosam. Ut quod ab necessitatibus eum laboriosam non recusandae id natus eaque, neque at sequi sint sunt.
+    Impedit voluptates libero numquam vel, earum saepe provident dolor sunt nobis distinctio blanditiis deserunt harum praesentium voluptate sed delectus sequi totam a cupiditate quis assumenda reiciendis culpa ab suscipit. Dolorum.
+    Autem vitae saepe mollitia atque explicabo neque labore. Eius quos pariatur dignissimos aut doloremque impedit atque repellat, cupiditate aperiam excepturi voluptas tenetur aliquam ipsa magnam quam officia velit ab explicabo!
+    Vel corrupti enim, quidem non eaque earum recusandae nam veritatis harum saepe voluptas expedita? Consequatur fugiat ad vero, repellat quia quibusdam quasi modi dolor esse! Aliquam corporis incidunt quod temporibus?
+    Facilis voluptate est incidunt dolor. Consectetur minima molestiae sint perferendis nisi quo. Nostrum dolorum facilis ex aliquid optio autem eius libero inventore, unde, dignissimos ea quaerat maiores nam quos repellendus.</p>
+    </div>
+
+    <div class="seccion-2">
+    <h2 id="categoria-principal"> Historia de Green Day </h2>
+    <p>Se formó en 1987. Tiene tres integrantes: Billie Joe Armstrong, Mike Dirnt, Tré Cool.</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere nesciunt aliquid nulla itaque assumenda nostrum doloribus quisquam ab asperiores, ipsa ducimus quasi commodi officiis, culpa vel laboriosam dicta ex sequi?
+    Pariatur, quasi blanditiis debitis, velit corporis minus sequi, sapiente quibusdam ipsa voluptatibus ea alias. Tempore velit illo eligendi nihil earum praesentium blanditiis eveniet deserunt. Illo, similique? Est, itaque molestias. Nesciunt!</p>
+
+    <h3> Anécdotas </h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, ea excepturi voluptates libero ipsa eum ex quo corporis harum dicta quos esse praesentium porro quis id aliquid animi quaerat ad.
+    Ratione cumque velit, fugiat itaque debitis voluptatem dolor ab consectetur molestias magni repellat nihil sint consequatur sit. Voluptatibus ullam dolor libero quis ut illum aliquid explicabo error aperiam debitis! Vel!</p>
+    </div>
+    <h2 class="subcategoria"> Canciones más destacadas </h2>
+    <!-- Listas: Ordenadas y desordenadas -->
+    <p> Top 3 de canciones más reproducidas: </p>
+
+    <ol> <!-- Ordered List, lista ordenada -->
+        <li>Basket Case</li> <!-- List item, elemento de lista -->
+        <li>American Idiot</li>
+        <li>Boulevard of Broken Dreams</li>
+    </ol>
+
+    <p> Mis canciones <strong>favoritas</strong> de mi banda favorita son:</p>
+    <ul> <!-- Unordered list, lista desordenada -->
+        <li> Poprocks and coke </li> 
+        <li> East Jesus Nowhere </li>
+        <li> Whatsername </li>
+            <ol>
+                <li>Versión de estudio</li>
+                <li>Versión de musical</li>
+                <li>Versión inteligencia artificial</li>
+            </ol>
+        <li> King for a day </li>
+        <li> 99 Revolutions </li>
+    </ul>
+
+    <h2 class="subcategoria"> Integrantes y ex integrantes de la banda </h2>
+    <p> Los integrantes actuales de la banda son: </p>
+    <dl> <!-- Description list, lista descriptiva -->
+        <dt> Billie Joe Armstrong</dt> <!-- Término a definir -->
+        <dd> Billie utiliza su nombre real, nació en febrero de 1972. Su libro favorito es "The Catcher in the rye".</dd> <!-- Detalles de la descripción -->
+
+        <dt> Mike Dirnt </dt>
+        <dd> Su nombre real es Michael Ryan Pritchard. Es el bajista de la banda</dd>
+
+        <dt> Tré Cool </dt>
+        <dd> Su nombre real es ... Es el baterista de la banda y fue varios años a la escuela de payasos.</dd>
+    </dl>
+
+
+    
+</body>
+</html>

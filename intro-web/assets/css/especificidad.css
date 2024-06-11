@@ -1,0 +1,34 @@
+#titulo-principal{/* Valor 100 */
+    color: cornflowerblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1.titulo{ /* Valor de 11, porque se sumaron los valores de cada selector: etiqueta + clase */
+    color:crimson;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.titulo{ /* Valor de 10, en especificidad */
+    color:rgb(191, 233, 255) ;
+}
+
+/* Valor de 1: Selectores de tipo,etiqueta y los pseudo-elementos 
+Valor de 10: Los selectores de clase, atributo y las pseudo-clases
+Valor de 100: Los selectores de id
+*/
+
+h1{ /* Valor de 1- especificidad */
+    color:royalblue;/* Colores predeterminados */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color:#F08080;/* Colores hexadecimales */
+    font-family: cursive;
+}
+
+h1{
+    color:rgb(128, 0, 128);/* Colores rgb */
+    color:black;
+} 
+

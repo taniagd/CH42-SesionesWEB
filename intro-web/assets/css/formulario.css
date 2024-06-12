@@ -1,0 +1,137 @@
+*{/* Resetear estilos que vienen por default en el navegador */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye el padding y border en el cálculo del ancho y alto total de los elementos */
+}
+
+:root{ /* Declaramos variables para reutilizar los colores */
+    --color_texto:#5c3d5b;
+    --color_elementos_fieldset:#4d3e6b;
+    --color_boton:#f07360;
+    --color_fieldset: #FFA07A;
+}
+
+nav {
+    display: flex; /* Se aplica flexbox al contenedor nav, lo que permite una distribución flexible de los elementos que hay dentro de él. */
+    /* flex-direction: row-reverse; */
+    justify-content: space-between; /* Distribución uniforme de elementos, con espacio entre ellos.  */
+    align-items: center; /* Alineación vertical de los elementos al centro, dentro de nav */
+}
+#logo img{
+    width: 300px; /* Tamaño fijo de la imagen */
+    height: auto; /* En automático mantiene la proporción, para que no se distorsione la imagen al cambiar de tamaño */
+    margin: 10px 15px;/* Añade margen de 10px en lo superior e inferior y 15px en los lados izq y derecho, separando de otros elementos */
+}
+
+nav>ul{
+    list-style-type:none; /* Se eliminan los puntos de la lista */
+    display: flex; /* Se utiliza flexbox oara alinear los elementos de la lista horizontalmente */
+}
+
+/* Elementos de la barra de navegación */
+.elementos-navegacion{
+    margin: 20px 50px; /* Se añade espacio alrededor de cada elemento de la lista */
+    font-size: 1.3em; /* Unidad relativa, sugerida para las fuentes */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Enlaces dentro de los elementos de la barra de navegación */
+.elementos-navegacion a{
+    text-decoration: none; /* Elimina el subrayado de los enlaces de la etiqueta a */
+    color: var(--color_texto); /* Cambiar el color con una variable. Aplica el color de texto definido en la variable*/
+}
+
+.elementos-navegacion a:hover{ /* Uso de la pseudo-clase hover(al pasar el mouse) */
+    color:#f07360;/* Cambia el color del texto al pasar el cursor */
+    text-decoration: underline overline;/* Añade un subrayado y sobrelineado */
+}
+
+h1{
+    color:var(--color_texto);/* Aplica el color del texto definido en la variable */
+    text-align: center;/* Se centra el texto */
+}
+
+form{
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    width: 70%; /* Ocupa el 70% del contenedor principal*/
+    max-width: 800px; /* Se fija un ancho máximo */
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;/* Se centra el texto del formulario */
+}
+
+fieldset{
+    border-color: var(--color_fieldset); /* Establece el color del borde */
+    border-radius: 1.2em; /* Se redondean los bordes */
+    color: var(--color_elementos_fieldset);/* Se aplica el color del texto */
+    margin: 20px;/* Añade espacio alrededor de los fieldsets */
+}
+
+legend{
+    text-align: left;/* Alineación del texto a la izquierda */
+    font-size: 1.6em;/* Se ajusta tañamo de fuente */
+}
+
+/* Pseudoelemento */
+legend::first-letter{
+    color: var(--color_fieldset); /* Establece el color de la primera letra utilizando la variable definida */
+}
+
+#datos-basicos,
+#datos-pedido,
+#datos-envio{
+    padding: 30px 50px;/* Añade espacio interno alrededor del contenido */
+}
+
+#datos-basicos label,
+#datos-pedido label{
+    display: block; /* Hace que las etiquetas se muestren como elementos de bloque, en vez de elementos en línea (uno tras otro) así no utilizamos el br en html */
+}
+
+#datos-basicos input,
+#datos-pedido input{
+    border: 3px solid var(--color_elementos_fieldset);/* Color y grosor del borde */
+    width: 200px;/* Se fija el ancho de los campos de entrada */
+    height: 30px;/* Se fija la altura de los campos de entrada */
+}
+
+/* Estilos a campos de entrada cuando estén en foco */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus{
+    outline: none;/* Se elimina el borde predeterminado al enfocar */
+    box-shadow: 5px 3px var(--color_elementos_fieldset);/* Agrega una sombra cuando se enfoca el campo */
+}
+
+#datos-pedido select[name="menu-postres"]{
+    width: 200px;/* Ancho del campo select */
+    height: 30px; /* Altura de campo select */
+    border: 3px solid var(--color_elementos_fieldset);/* Color y grosor del borde */
+}
+
+#datos-envio label{
+    display: inline-block;/* Hace que las etiquetas sean elementos en línea-bloque */
+    padding: 2px;
+    margin:4px;
+}
+
+.contenedor-terminos{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+button[type="submit"]{
+    width: 120px;
+    height: auto;
+    float: right;/* Se fija el botón a la derecha */
+    color: var(--color_elementos_fieldset);
+    background-color: var(--color_boton);
+    border: 2px solid var(--color_elementos_fieldset);
+}
+
+button:active{
+    transform: scale(0.90); /* Reducir ligeramente el tamaño del botón cuando se active */
+}
